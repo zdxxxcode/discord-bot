@@ -6,6 +6,9 @@ const Client = new Discord.Client({
         Discord.Intents.FLAGS.GUILD_MEMBERS,
     ]
 });
+
+const { token } = require("./config.json");
+
 const { MessageEmbed } = require("discord.js")
 
 const prefix = "$";
@@ -338,4 +341,4 @@ Client.on("messageCreate", message => {
 
 
 
-Client.login("ODg2OTg0MjY2NzM3NjY0MDQw.YT9ieA.N3IxCFw-BUqKF20sjKdxIVech3k");
+Client.login(process.env.TOKEN);
