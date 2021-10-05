@@ -7,7 +7,7 @@ const Client = new Discord.Client({
     ]
 });
 
-const { token } = require("./config.json");
+
 
 const { MessageEmbed } = require("discord.js")
 
@@ -341,4 +341,4 @@ Client.on("messageCreate", message => {
 
 
 
-Client.login(process.env.TOKEN);
+Client.login(process.env.BOT_TOKEN);
